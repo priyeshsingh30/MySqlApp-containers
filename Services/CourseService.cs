@@ -11,13 +11,10 @@ namespace Sqlapp.Services
     public class CourseService
     {
         // Ensure to change the below variables to reflect the connection details for your database
-
         private static string db_connectionstring="server=db;user=root;password=Azure@123;database=appdb";
         
         private MySqlConnection GetConnection()
         {
-            // Here we are creating the SQL connection
-            
             return new MySqlConnection(db_connectionstring);
         }
 
